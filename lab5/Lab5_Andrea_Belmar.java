@@ -1,6 +1,6 @@
 /*
  *
- *
+ * This program turns a user input for a color red from 0 - 255 into a hex value
  *
  */
 
@@ -20,7 +20,7 @@ public class Lab5_Andrea_Belmar{
 		System.out.println("Enter the amount of red as an integer from 0 - 255: ");
 		userInput = input.nextInt();
 
-		//checks in integer is between 0-255
+		//checks if integer is between 0-255
 		if (userInput <= 255 && userInput >= 0){
 		
 			//valid number
@@ -83,9 +83,6 @@ public class Lab5_Andrea_Belmar{
 			//invalid number
 			System.out.println("invalid number");
 		}
-
-
-
 
 	}
 }
