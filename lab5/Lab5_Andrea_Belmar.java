@@ -77,7 +77,7 @@ public class Lab5_Andrea_Belmar{
 					leastSigDigit = String.valueOf(mod16Result);
 			
 			}
-			System.out.println("The hex value is: "+mostSigDig+leastSigDig);
+			System.out.println("The hex value is: "+mostSigDigit+leastSigDigit);
 		}
 		else{
 			//invalid number
