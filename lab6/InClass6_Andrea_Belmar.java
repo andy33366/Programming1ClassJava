@@ -25,7 +25,8 @@ public class InClass6_Andrea_Belmar {
 		//adding one to account for the -1 shift from casting as int
 		upper = upper - (lower) + 1;
 
-		int random = (int) (Math.random() * upper) + lower;
+		//the random number will be upper * 0-0.999 cast as an int + the lower number
+		random = (int) (Math.random() * upper) + lower;
 
 		System.out.println("your number is: "+random);
 	
