@@ -53,11 +53,11 @@ public class Lab7_Andrea_Belmar {
 		//	city1 last
 		
 		//Tests if city1 comes first by checking the unicode value and comparing it to the other 2 cities 
-		if (city2.compareTo(city1) > city1.compareTo(city2) && city3.compareTo(city1) > city1.compareTo(city3)) {
+		if (city2.compareToIgnoreCase(city1) > 0 && city3.compareToIgnoreCase(city1) > 0 ){
 		
 			System.out.println(city1);
 			//checks if city2 or city 3 comes next
-			if (city3.compareTo(city2) > city2.compareTo(city3)){
+			if (city3.compareToIgnoreCase(city2) > 0 ){
 			
 				System.out.println(city2);
 				System.out.println(city3);
@@ -69,11 +69,11 @@ public class Lab7_Andrea_Belmar {
 			}
 		}
 		//checks if city2 comes first by comparing the unicode value to city 3
-		else if (city3.compareTo(city2) > city2.compareTo(city3)){
+		else if (city3.compareToIgnoreCase(city2) > 0){
 		
 			System.out.println(city2);
 			//checks if city 3 or city1 comes next
-			if (city3.compareTo(city1) > city1.compareTo(city3)){
+			if (city3.compareToIgnoreCase(city1) > 0){
 			
 				System.out.println(city1);
 				System.out.println(city3);
@@ -86,7 +86,7 @@ public class Lab7_Andrea_Belmar {
 		}
 		//if neither city1 nor city2 come first, city3 must come first
 		//checks if city2 or city1 comes next
-		else if (city2.compareTo(city1) > city1.compareTo(city2)) {
+		else if (city2.compareToIgnoreCase(city1) > 0) {
 		
 			System.out.println(city3);
 			System.out.println(city1);
