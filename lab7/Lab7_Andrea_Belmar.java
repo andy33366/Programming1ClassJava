@@ -14,13 +14,14 @@ public class Lab7_Andrea_Belmar {
 
 		String city1, city2, city3;
 
-		System.out.println("Enter the first city: ");
+		//prompt the user for the three cities
+		System.out.print("Enter the first city: ");
 		city1 = input.nextLine();
 
-		System.out.println("Enter the second city: ");
+		System.out.print("Enter the second city: ");
 		city2 = input.nextLine();
 		
-		System.out.println("Enter the third city: ");
+		System.out.print("Enter the third city: ");
 		city3 = input.nextLine();
 
 
@@ -50,10 +51,12 @@ public class Lab7_Andrea_Belmar {
 		//	city3 first
 		//	city2 next
 		//	city1 last
-		//
+		
+		//Tests if city1 comes first by checking the unicode value and comparing it to the other 2 cities 
 		if (city2.compareTo(city1) > city1.compareTo(city2) && city3.compareTo(city1) > city1.compareTo(city3)) {
 		
 			System.out.println(city1);
+			//checks if city2 or city 3 comes next
 			if (city3.compareTo(city2) > city2.compareTo(city3)){
 			
 				System.out.println(city2);
@@ -65,9 +68,11 @@ public class Lab7_Andrea_Belmar {
 				System.out.println(city2);
 			}
 		}
+		//checks if city2 comes first by comparing the unicode value to city 3
 		else if (city3.compareTo(city2) > city2.compareTo(city3)){
 		
 			System.out.println(city2);
+			//checks if city 3 or city1 comes next
 			if (city3.compareTo(city1) > city1.compareTo(city3)){
 			
 				System.out.println(city1);
@@ -79,6 +84,8 @@ public class Lab7_Andrea_Belmar {
 				System.out.println(city1);
 			}
 		}
+		//if neither city1 nor city2 come first, city3 must come first
+		//checks if city2 or city1 comes next
 		else if (city2.compareTo(city1) > city1.compareTo(city2)) {
 		
 			System.out.println(city3);
@@ -91,7 +98,6 @@ public class Lab7_Andrea_Belmar {
 			System.out.println(city2);
 			System.out.println(city1);
 		}
-		//city3 is first
 
 		//
 		//For loop
