@@ -28,8 +28,15 @@ public class InClass10_Andrea_Belmar {
 		System.out.println("How much was the tip as a percent? eg. 15, 18");
 		tip = input.nextDouble();
 
-		System.out.printf("the final cost is: %.2f", initCost + tax(initCost) + tip(initCost, tip));
+		printOutput(initCost, tax(initCost), tip(initCost, tip));
 
+	}
+
+	//prints output
+	public static void printOutput(double initCost, double tax, double tip){
+		//
+		System.out.printf("the final cost is: %.2f", initCost + tax + tip);
+	
 	}
 
 	//calculates sales tax
