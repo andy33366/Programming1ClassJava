@@ -5,11 +5,11 @@ import java.util.Scanner;
 
 public class InClass11_Andrea_Belmar{
 
-	public static void main{
+	public static void main(String[] args){
 
 		//prints 250 + 500 and "hello" + "world"
 		System.out.println("Adding 250 and 500 gives: " + add(250, 500));
-		System.out.println("Combining \"Hello\" and \"world\" gives: "add("Hello", " world"));
+		System.out.println("Combining \"Hello\" and \"world\" gives: " + add("Hello", " world"));
 	
 	}
 
